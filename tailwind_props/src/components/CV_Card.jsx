@@ -1,8 +1,11 @@
-function CV_Card() {
+// eslint-disable-next-line react/prop-types
+function CV_Card({username, other_key}) {
+    console.log("cv_card props", username, other_key);
     return (
+        
         <div className="mb-10 duration-300  hover:-rotate-0  -rotate-12 group border-sky-900 border-4  overflow-hidden rounded-2xl relative h-52 w-72 bg-sky-800 p-5 flex flex-col items-start gap-4">
             <div className="text-gray-50">
-                <span className="font-bold text-5xl">Jr</span>
+                <span className="font-bold text-5xl">{username}</span>
                 <p className="text-xs">Frontend Developer</p>
             </div>
             <button className="duration-300 hover:bg-sky-900 border hover:text-gray-50 bg-gray-50 font-semibold text-sky-800 px-3 py-2 flex flex-row items-center gap-3">Dowload CV
